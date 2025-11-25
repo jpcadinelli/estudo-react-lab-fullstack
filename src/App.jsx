@@ -1,12 +1,14 @@
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 import './App.css'
-import ListarProdutos from './components/ListarProdutos'
+import CatalogoPage from './page/CatalogoPage'
 
 function App() {
 
   return (
-    <>
-      <ListarProdutos />
-    </>
+    <Routes>
+        <Route path="/" element={<CatalogoPage />} />
+    </Routes>
   )
 }
 
