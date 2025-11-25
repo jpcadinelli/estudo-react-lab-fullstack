@@ -1,18 +1,21 @@
-import reactLogo from './assets/react.svg'
 import './App.css'
-
-function Saudacao({ nome }) {
-    return <h2 className="titulo-dois" >Bem-vindo(a), { nome }!</h2>
-}
+import Saudacao from './Saudacao'
+import Contador from './Contador'
+import FormEmail from './FormEmail'
+import Todos from './components/TodoList'
 
 function App() {
-    return (
-        <div >
-            <img src={ reactLogo } Alt="Logo do react" />
-            <Saudacao nome={ "Tássio" } />
-            <Saudacao nome={ "Turma UNIVASS" } />
-        </div >
-    )
+
+  return (
+    <>
+      <h1>Seja Bem-Vindo!</h1>
+      <p>Meu primeiro app react</p>
+      <Saudacao />
+      <Contador />
+      <FormEmail />
+      <Todos />
+    </>
+  )
 }
 
 export default App
